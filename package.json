@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "animate.css": "^4.1.1",
+    "gsap-trial": "^3.12.4",
+    "sass": "^1.69.6"
+  }
+}
