@@ -6,6 +6,8 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Owen Yang's Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script defer src="app.js"></script>
+        <script src="https://kit.fontawesome.com/d03d9cce98.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id = "header">
@@ -21,7 +23,7 @@
         <div class = "header-text">
             <h1> Data Science Student @ UCSD</h1>
             <h1>Hi, I'm<span> Owen</span> Yang</h1>
-            <h1> from Toronto, Canada.</h1>
+            <h1> from San Diego, California.</h1>
         </div>
     </div>
 </div>
@@ -34,14 +36,48 @@
             </div>
             <div class = "about-col-2">
                 <h1 class = "sub">About Me</h1>
-                <p>I love fashion!!!!!!</p>
+                <p class = "desc"> I am a dedicated Data Science student at UCSD with a strong foundation in Python, 
+                    Java, HTML, CSS, and Javascript (created this website using HTML, CSS, and JS :-) ). My expertise extends to various frameworks and 
+                    libraries, including Pandas for data manipulation and React for building dynamic web applications. 
+                    Enthusiastic about the intersection of technology and innovation, I am particularly 
+                    passionate about machine learning and problem-solving. Eager to contribute to the evolving 
+                    landscape of the tech industry, I am committed to continuous learning and staying 
+                    abreast of emerging trends.</p>
                 <div class = "t-titles">
-                    <p class = "t-links active-link">Skills</p>
-                    <p class = "t-links">Education</p>
-                    <p class = "t-links">Experience</p>
+                    <p class = "t-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class = "t-links" onclick="opentab('education')">Education</p>
+                    <p class = "t-links" onclick="opentab('experience')">Experience</p>
                 </div>
-                <div class = "tab-contents">
+                <div class = "tab-contents active-tab" id="skills">
+                    <div class = "skill-bar">
+                        <li><h3 class = "java-text">Java: 3 years</h3>
+                            <span class = 'bar'><span class = "Java"></span></span>
+                        </li>
+                        <li><h3 class = "python-text">Python: 2 years</h3>
+                            <span class = 'bar'><span class = "Python"></span></span>
+                        </li>
+                        <li><h3 class = "html-text">HTML: 1 year</h3>
+                            <span class = 'bar'><span class = "HTML"></span></span>
+                        </li>
+                        <li><h3 class = "css-text">CSS: 1 year</h3>
+                            <span class = 'bar'><span class = "CSS"></span></span>
+                        </li>
+                        <li><h3 class = "js-text">Javascript: 1 year</h3>
+                            <span class = 'bar'><span class = "JS"></span></span>
+                        </li>
+                    </div>       
+                </div>
+                <div class = "tab-contents" id="education">
                     <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                    </ul>
+                </div>
+                <div class = "tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
                         <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
                     </ul>
                 </div>
@@ -49,6 +85,89 @@
         </div>
     </div>
 </div>
+<!--------------Portfolio------------------>
+<div id = "portfolio">
+    <div class = "container">
+        <h1 class = "sub-title">My Work</h1>
+        <div class="work-list">
+            <div class = "work">
+                <img src = "blank.png">
+                <div class = layer>
+                    <h2>Targify.io</h2>
+                    <p>A software that increases cold email and DM 
+                        conversion rates by 3-5x using personalized 
+                        outreach on autopilot.</p>
+                    <a href ="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "blank.png">
+                <div class = layer>
+                    <h2>Targify.io</h2>
+                    <p>A software that increases cold email and DM 
+                        conversion rates by 3-5x using personalized 
+                        outreach on autopilot.</p>
+                    <a href ="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "blank.png">
+                <div class = layer>
+                    <h2>Targify.io</h2>
+                    <p>A software that increases cold email and DM 
+                        conversion rates by 3-5x using personalized 
+                        outreach on autopilot.</p>
+                    <a href ="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!----------------Contact-------------->
+<div id ="contact">
+    <div class = "container">
+        <div class = "row">
+            <div class ="contact-left">
+                <h1 class ="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> owentheyanger@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 8586667117</p>
+                <div class = "social-icons">
+                    <a href="https://www.linkedin.com/in/owen-keding-yang/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="blank.png" download class = "btn btn2">Download Resume</a>
 
+            </div>
+            <div class ="contact-right">
+                <form>
+                    <input type ="text" name = "Name" placeholder = "Your Name" required>
+                    <input type ="email" name = "email" placeholder = "Your Email" required>
+                    <textarea name = "Message" rows = "6" placeholder = "Your Message"></textarea>
+                    <button type ="submit" class = "btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class = "copyright">
+        <p>Website by Owen Yang. Made with <i class="fa-solid fa-heart"></i>.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("t-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 </body>
 </html>
