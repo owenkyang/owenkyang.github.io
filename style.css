@@ -513,9 +513,21 @@ form .btn2{
     }
     .header-text h1{
         font-size: 20px;
+        word-spacing: 0px;
     }
     .header-text h1:nth-child(1){
         font-size: 20px;
+        width: 16.3em;
+    }
+    .header-text h1:nth-child(2){
+        word-spacing: 0px;
+        width: 10.7em;
+
+    }
+    .header-text h1:nth-child(3){
+        word-spacing: 0px;
+        width: 16.1em;
+
     }
     .skill-bar{
         width: 300px;
