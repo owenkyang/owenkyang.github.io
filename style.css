@@ -502,4 +502,24 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
+/*--------- css for smaller screens------------*/
+@media only screen and (max-width: 600px){
+    #header{
+        background: url(background2.jpg);
+        background-size: cover;
+        padding: -150px;
+        margin-bottom: 50px;
+        height: 500px;
+    }
+    .header-text h1{
+        font-size: 20px;
+    }
+    .header-text h1:nth-child(1){
+        font-size: 20px;
+    }
+    .skill-bar{
+        width: 300px;
+    }
+
+}
 
