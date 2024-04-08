@@ -48,7 +48,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: olivedrab;
+    background: #87ceeb;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -64,7 +64,7 @@ nav ul li a:hover::after{
     margin-top: 280px;
 }
 .brand h1 span{
-    color: olivedrab;
+    color: #87ceeb;
     font-size: 35px;
 
 }
@@ -79,6 +79,11 @@ nav ul li a:hover::after{
 .typewrite{
     text-decoration: none;
     color: inherit
+}
+.header-text h2{
+    padding-top: 15px;
+    font-size: 30px;
+    color: grey;
 }
 /*
 .header-text h1:nth-child(1){
@@ -204,7 +209,7 @@ nav ul li a:hover::after{
   */
 .header-text h1 span{
     font-family: Courier;
-    color: olivedrab;
+    color: #87ceeb;
 }
 /*-----------about----------*/
 #about{
